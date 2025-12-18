@@ -20,7 +20,7 @@ Methodological details how the bids were constructed can be found in TradeRES â€
 
 
 # How the Model Works 
-- Loads hourly bid data from Excel
+-  Hourly bid data from Excel
 - Separates PT/ES and BUY/SELL bids
 - Builds a PyPSA network per hour
 - Applies interconnection constraints

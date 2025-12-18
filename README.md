@@ -1,4 +1,4 @@
-#  PySDAC-MarketSim – Simplified MIBEL Day-Ahead Market Simulator
+#  PyMIBELSim-DAM: MIBEL Day-Ahead Market Simplified Simulator
 
 This repository contains a simplified day-ahead electricity market clearing model for the Iberian Electricity Market (MIBEL), implemented using PyPSA. The model simulates hourly day-ahead market clearing based on linear programming and explicit supply and demand bids.
 
@@ -23,7 +23,7 @@ Methodological details how the bids were constructed can be found in TradeRES �
 
 
 # How the Model Works 
--  Hourly bid and interconnection data from Excel
+-  Create a Execel file with hourly bid and interconnection data for 24 periods
 - Separates PT/ES and BUY/SELL bids
 - Builds a PyPSA network per hour
 - Applies interconnection constraints
@@ -36,7 +36,7 @@ Methodological details how the bids were constructed can be found in TradeRES �
 - Plots 24h PT vs ES price comparison
 
 # Running the Simulation
-python SDAC_v1-2.py
+python MIBEL_DAM_v1-2.py
 
 # Project Context and Status
 This work has been developed at LNEG within the scope of the project “Man0EUvRE – Energy System Modelling for the Transition to Net-Zero 2050 for the EU via REPowerEU”, funded by CETPartnership, the European Partnership under the Joint Call 2022 for research proposals, co-funded by the European Commission (Grant Agreement No. 101069750), and with the funding organisations listed on the CETPartnership website.

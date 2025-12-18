@@ -1,7 +1,10 @@
-# MIBEL-Day-Ahead-Market-Simulation-Simplified
+#  PySDAC-MarketSim – Simplified MIBEL Day-Ahead Market Simulator
 
-This repository contains a simplified Day-Ahead electricity market clearing model for the Iberian electricity  market (MIBEL) using PyPSA.
-The model clears hourly bids, considers the PT–ES interconnection capacity, and outputs zonal prices, traded energy, and interconnection flows. This model aims to reproduce the main economic logic of the MIBEL Day-Ahead market, but applies several simplifications, such as: 
+This repository contains a simplified day-ahead electricity market clearing model for the Iberian Electricity Market (MIBEL), implemented using PyPSA. The model simulates hourly day-ahead market clearing based on linear programming and explicit supply and demand bids.
+
+The model performs hourly clearing, explicitly represents the PT–ES interconnection capacity, and outputs zonal prices, traded energy volumes, and interconnection flows. Its objective is to reproduce the core economic clearing logic of the MIBEL day-ahead market while maintaining computational transparency and simplicity.
+
+To achieve this, the model applies several simplifying assumptions, including:
 - Each hour is cleared independently (no intertemporal constraints);
 - The market is represented using two price zones only (PT and ES);
 - Block bids, complex bids, and complex order conditions (e.g. minimum income, load gradient, linked bids) are not considered
@@ -20,7 +23,7 @@ Methodological details how the bids were constructed can be found in TradeRES �
 
 
 # How the Model Works 
--  Hourly bid data from Excel
+-  Hourly bid and interconnection data from Excel
 - Separates PT/ES and BUY/SELL bids
 - Builds a PyPSA network per hour
 - Applies interconnection constraints
@@ -29,11 +32,11 @@ Methodological details how the bids were constructed can be found in TradeRES �
   - Zonal prices (PT & ES)
   - Interconnection flows
   - Traded energy per unit
--Exports  results for Excel 
+-Exports  results to Excel 
 - Plots 24h PT vs ES price comparison
 
 # Running the Simulation
 python SDAC_v1-2.py
 
 # Project Context and Status
-This work is under development within the scope of the project “Man0EUvRE – Energy System Modelling for the Transition to Net-Zero 2050 for the EU via REPowerEU”, funded by CETPartnership, the European Partnership under the Joint Call 2022 for research proposals, co-funded by the European Commission (Grant Agreement No. 101069750), and with the funding organisations listed on the CETPartnership website.
+This work has been developed at LNEG within the scope of the project “Man0EUvRE – Energy System Modelling for the Transition to Net-Zero 2050 for the EU via REPowerEU”, funded by CETPartnership, the European Partnership under the Joint Call 2022 for research proposals, co-funded by the European Commission (Grant Agreement No. 101069750), and with the funding organisations listed on the CETPartnership website.

@@ -1,6 +1,6 @@
 # MIBEL-Day-Ahead-Market-Simulation-Simplified
 
-This repository contains a simplified Day-Ahead electricity market clearing simulation for the MIBEL (Portugal–Spain) market using PyPSA.
+This repository contains a simplified Day-Ahead electricity market clearing model for the Iberian electricity  market (MIBEL) using PyPSA.
 The model clears hourly bids, considers the PT–ES interconnection capacity, and outputs zonal prices, traded energy, and interconnection flows. This model aims to reproduce the main economic logic of the MIBEL Day-Ahead market, but applies several simplifications, such as: 
 - Each hour is cleared independently (no intertemporal constraints);
 - The market is represented using two price zones only (PT and ES);
